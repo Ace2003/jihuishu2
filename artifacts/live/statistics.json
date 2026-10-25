@@ -1,0 +1,194 @@
+{
+  "input": {
+    "id": "statistics",
+    "about": "我是应用统计学大三学生，会 Python 和数据分析，做过 AI 产品原型，希望寻找研究或实习交流。",
+    "goal": "想认识清华大学从事机器学习和数据科学的教授，了解公开讲座或研究交流入口。"
+  },
+  "base": "http://127.0.0.1:3000",
+  "httpStatus": 200,
+  "elapsedMs": 25197,
+  "status": "VERIFIED",
+  "integrity": true,
+  "events": [
+    {
+      "type": "progress",
+      "stage": "planning",
+      "details": "正在理解你的目标与规划职业角色…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "已规划 3 类人物，开始调用元宝搜索…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 3/3：统计学教授，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 2/3：数据科学教授，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 1/3：机器学习教授，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "已收集 25 个去重来源，正在提取具名候选…"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "正在逐字段核对职位、机构与公开入口；证据不足的人物将被省略…"
+    },
+    {
+      "type": "result",
+      "data": {
+        "mode": "live",
+        "summary": "应用统计学大三学生，会Python和数据分析，做过AI产品原型，希望寻找研究或实习交流。",
+        "keywords": [
+          "应用统计学",
+          "大三学生",
+          "Python"
+        ],
+        "goal": "想认识清华大学从事机器学习和数据科学的教授，了解公开讲座或研究交流入口。",
+        "queries": [
+          {
+            "stage": "discovery",
+            "role": "统计学教授",
+            "query": "清华大学 统计学 教授 研究方向 个人主页 公开讲座 交流入口",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "数据科学教授",
+            "query": "清华大学 数据科学 教授 研究方向 个人主页 公开讲座 交流入口",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "机器学习教授",
+            "query": "清华大学 机器学习 教授 研究方向 个人主页 公开讲座 交流入口",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "数据科学教授",
+            "query": "刘军 数据科学教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "机器学习教授",
+            "query": "唐杰 机器学习教授 机构 职位 个人简介 公开活动",
+            "count": 9
+          },
+          {
+            "stage": "verification",
+            "role": "机器学习教授",
+            "query": "黄民烈 机器学习教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "数据科学教授",
+            "query": "陈松蹊 数据科学教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "机器学习教授",
+            "query": "东昱晓 机器学习教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "统计学教授",
+            "query": "杨瑛 统计学教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          }
+        ],
+        "warnings": [],
+        "usage": {
+          "modelCalls": 3,
+          "searchCalls": 9,
+          "promptTokens": 37050,
+          "completionTokens": 3216
+        },
+        "searchedAt": "2026-10-24T12:30:45.191Z",
+        "verificationBasis": "SearchPro 返回的标题和摘要逐字段核对；未抓取来源全文，不保证当前任职或入口仍有效。",
+        "groups": [
+          {
+            "id": "r1",
+            "label": "机器学习教授",
+            "people": [
+              {
+                "id": "p1",
+                "name": "东昱晓",
+                "identity": "副教授",
+                "organization": "清华大学计算机系",
+                "intro": "公开检索资料记载：东昱晓 姓名:东昱晓 职称:副教授。任职信息以资料日期为准，当前状态请查看原文。",
+                "evidence": {
+                  "identity": {
+                    "value": "副教授",
+                    "quote": "东昱晓 姓名:东昱晓 职称:副教授",
+                    "source_id": "S4",
+                    "url": "https://www.cs.tsinghua.edu.cn/info/1112/5837.htm",
+                    "date": "",
+                    "basis": "search-excerpt"
+                  },
+                  "organization": {
+                    "value": "清华大学计算机系",
+                    "quote": "东昱晓,清华大学计算机系副教授",
+                    "source_id": "S4",
+                    "url": "https://www.cs.tsinghua.edu.cn/info/1112/5837.htm",
+                    "date": "",
+                    "basis": "search-excerpt"
+                  }
+                },
+                "verification": "search-excerpt",
+                "common": [
+                  "背景交集（推断）：用户会Python和数据分析，与东昱晓公开研究的数据挖掘、机器学习方向有交集"
+                ],
+                "collaborate": [
+                  "AI建议：可在公开学术活动场合，就图机器学习与数据挖掘的学习路径请教讨论"
+                ],
+                "connection": [
+                  "未检索到有充分证据的公开连接入口，不提供推测的联系方式。"
+                ],
+                "entryPoints": [],
+                "conclusion": "人物有公开资料支持，但本次未找到可靠的公开连接入口。",
+                "sources": [
+                  {
+                    "id": "S4",
+                    "title": "东昱晓",
+                    "url": "https://www.cs.tsinghua.edu.cn/info/1112/5837.htm",
+                    "site": "清华大学主页",
+                    "date": "",
+                    "excerpt": "首页 > 师资状况 > 教职工名录 > 计算机软件研究所 > 副高 > 正文 东昱晓 姓名:东昱晓 职称:副教授 邮箱:yuxiaod@tsinghua.edu.cn 个人主页: https://keg.cs.tsinghua.edu.cn/yuxiao/ 研究领域 数据挖掘,机器学习,人工智能,网络科学 研究概况 东昱晓,清华大学计算机系副教授,知识工程实验室(KEG)成员。主要研究方向为数据挖掘、图机器学习、预训练模型和社交网络。近期研究成果包括图神经网络预训练(GraphMAE, GPT-GNN, GCC)、异构图表示学习(Hetero. Graph Transformer/HGT, metapath2vec)及网络嵌入理论和快速算法(NetMF, NetSMF, ProNE, SketchNE)等。相关研究获WWW 2022, WWW 2019, WSDM 2015最佳论文提名,并应用于脸书社交网络和微软图谱十亿级用户应用。博士毕业于美国圣母大学,曾工作于脸书人工智能和微软雷蒙德研究院。担任ECML-PKDD 2020/2021 ADS PC Co-Chair、WWW 2023 Track Co-Chair、KDD 2018/19/20 Deep Learning Day Co-Chair和IEEE Transactions on Big Data副主编。获国家青年人才项目支持、IJCAI 2022 Early Career Spotlight 、2017年ACM SIGKDD博士论文提名奖(即第三名)和2022年ACM SIGKDD新星奖。..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "label": "数据科学教授",
+            "people": []
+          },
+          {
+            "id": "r3",
+            "label": "统计学教授",
+            "people": []
+          }
+        ],
+        "sourceCount": 44,
+        "notice": ""
+      }
+    }
+  ]
+}

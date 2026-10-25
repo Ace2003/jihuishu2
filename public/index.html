@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#eef3e7" />
+  <title>机会树｜从你出发，发现值得认识的人</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="siteHeader">
+      <div class="brand"><span class="brandMark">✳</span> 机会树 <span class="brandEnglish">OPPORTUNITY TREE</span></div>
+      <div class="siteStatus">公开信息 · 真实线索</div>
+    </header>
+
+    <section id="entryPage" class="entryPage" aria-labelledby="entryTitle">
+      <div class="entryIntro">
+        <div class="entryCopy">
+          <p class="eyebrow">GROW YOUR CONNECTIONS</p>
+          <h1 id="entryTitle">从你开始，<br /><i>结出新的可能。</i></h1>
+          <p>告诉我们你是谁、想认识谁，让公开信息为你长出一棵机会树。</p>
+        </div>
+        <img class="entryTree" src="/sapling.png" alt="绿色水彩树" />
+      </div>
+      <form id="exploreForm" class="formCard">
+        <div class="field">
+          <div class="fieldHeading"><span class="fieldNumber">01</span><label for="about">介绍一下你自己</label></div>
+          <textarea id="about" maxlength="800" required placeholder="职业、学校、专业、项目、兴趣、技能…… 比如：应用统计学大三学生，做过 AI 产品，喜欢增长、内容创作和新工具。"></textarea>
+          <div class="fieldHint">自由描述，不用按模板填写</div>
+        </div>
+        <div class="field">
+          <div class="fieldHeading"><span class="fieldNumber">02</span><label for="goal">你想认识什么样的人？</label></div>
+          <textarea id="goal" maxlength="450" required placeholder="比如：AI 初创公司的创始人、投资人，寻找产品增长实习、合作或创业机会。"></textarea>
+          <div class="fieldHint">可以写职业、行业、目的，也可以写具体方向</div>
+        </div>
+        <div class="formActions">
+          <button id="liveButton" type="submit" class="primary">生成我的机会树 <span aria-hidden="true">↗</span></button>
+          <button id="previewButton" type="button" class="secondary">体验示例数据</button>
+        </div>
+        <div id="apiStatus" class="apiStatus" role="status"></div>
+      </form>
+      <div class="entryFootnote">只研究公开职业与活动资料 · 共同方向不是已建立的人脉关系</div><a class="scrollHint" href="#resultPage">↓ 滑动查看机会树</a>
+    </section>
+
+    <section id="loadingPage" class="loadingPage" hidden aria-live="polite">
+      <div class="loadingGraphic">✳</div>
+      <p class="eyebrow">GROWING</p>
+      <h2>机会树正在生长</h2>
+      <p id="progressText">正在理解你的背景与目标……</p>
+      <div class="loadingTrack"><span></span></div>
+      <button id="cancelBtn" class="secondary" type="button">取消探索</button>
+    </section>
+
+    <section id="resultPage" class="resultPage" aria-label="机会树预览和搜索结果">
+      <div class="resultBar">
+        <div><p class="eyebrow">A TREE OF POSSIBILITIES</p><h2>你的机会树</h2><p>向下探索六颗红苹果，点击查看人物与公开线索。</p></div>
+        <button id="resetButton" class="secondary" type="button">↑ 返回输入</button>
+      </div>
+      <div class="posterCanvas" id="posterCanvas" aria-label="机会树互动结果">
+        <img id="artwork" src="/tree-clean.png" alt="绿色水彩大树，树冠间有六颗红苹果" />
+        <div class="posterSmallTitle">YOUR OPPORTUNITY TREE <span>✳</span></div>
+        <div id="fruitLayer" class="fruitLayer"></div>
+        <div class="personalCard" id="personalCard">
+          <div class="personIntro"><p class="personalKicker">这棵树，从你开始。</p><p id="summaryText" class="personalDesc"></p></div>
+          <div class="personGoal"><p class="personalKicker">我想认识</p><p id="goalText" class="personalDesc"></p><div id="keywordChips" class="keywordChips"></div></div>
+          <div id="countsText" class="countsText"></div>
+        </div>
+        <div id="posterMark" class="posterMark">演示数据 · 非实时搜索</div>
+      </div>
+      <div class="resultActions"><button id="savePoster" class="primary" type="button">保存 3:4 机会树海报 ↓</button><p id="reportSummary" class="resultNote"></p></div>
+    </section>
+  </main>
+  <div id="modalOverlay" class="modalOverlay" hidden></div>
+  <section id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="人物详情" aria-hidden="true" tabindex="-1">
+    <div class="drawerTop"><button id="drawerBack" class="drawerBack" hidden type="button">← 人物列表</button><div id="drawerHeading" class="drawerHeading">探索果实</div><button id="drawerClose" class="drawerClose" aria-label="关闭" type="button">×</button></div>
+    <div id="drawerContents" class="drawerContents"></div>
+  </section>
+  <div id="toast" class="toast" role="alert" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

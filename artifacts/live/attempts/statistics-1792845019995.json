@@ -1,0 +1,268 @@
+{
+  "input": {
+    "id": "statistics",
+    "about": "我是应用统计学大三学生，会 Python 和数据分析，做过 AI 产品原型，希望寻找研究或实习交流。",
+    "goal": "想认识清华大学从事机器学习和数据科学的教授，了解公开讲座或研究交流入口。"
+  },
+  "base": "http://127.0.0.1:3000",
+  "httpStatus": 200,
+  "elapsedMs": 23937,
+  "status": "VERIFIED",
+  "integrity": true,
+  "events": [
+    {
+      "type": "progress",
+      "stage": "planning",
+      "details": "正在理解你的目标与规划职业角色…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "已规划 5 类人物，开始调用元宝搜索…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 2/5：机器学习研究者，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 3/5：数据科学研究者，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 1/5：高校教授，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 5/5：实习招募，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 4/5：学术讲座入口，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "已收集 48 个去重来源，正在提取具名候选…"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "正在逐字段核对职位、机构与公开入口；证据不足的人物将被省略…"
+    },
+    {
+      "type": "result",
+      "data": {
+        "mode": "live",
+        "summary": "应用统计学大三学生，具备Python与数据分析能力，做过AI产品原型，希望寻找机器学习与数据科学方向的研究或实习交流入口。",
+        "keywords": [
+          "高校教授",
+          "机器学习研究者",
+          "数据科学研究者"
+        ],
+        "goal": "想认识清华大学从事机器学习和数据科学的教授，了解公开讲座或研究交流入口。",
+        "queries": [
+          {
+            "stage": "discovery",
+            "role": "机器学习研究者",
+            "query": "清华大学 机器学习 课题组 研究交流 公开讲座 入口",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "数据科学研究者",
+            "query": "清华大学 数据科学 研究中心 公开活动 学术报告",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "高校教授",
+            "query": "清华大学 机器学习 数据科学 教授 研究方向 个人主页",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "实习招募",
+            "query": "清华大学 数据科学 机器学习 实验室 实习 招募 公开",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "学术讲座入口",
+            "query": "清华大学 机器学习 数据科学 公开讲座 报名 通知",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "高校教授",
+            "query": "黄民烈 高校教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "机器学习研究者",
+            "query": "朱军 机器学习研究者 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "学术讲座入口",
+            "query": "杨朋昆 学术讲座入口 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "数据科学研究者",
+            "query": "陈松蹊 数据科学研究者 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "高校教授",
+            "query": "刘军 高校教授 机构 职位 个人简介 公开活动",
+            "count": 10
+          }
+        ],
+        "warnings": [],
+        "usage": {
+          "modelCalls": 3,
+          "searchCalls": 10,
+          "promptTokens": 40302,
+          "completionTokens": 2923
+        },
+        "searchedAt": "2026-10-24T12:25:47.327Z",
+        "verificationBasis": "SearchPro 返回的标题和摘要逐字段核对；未抓取来源全文，不保证当前任职或入口仍有效。",
+        "groups": [
+          {
+            "id": "r1",
+            "label": "高校教授",
+            "people": [
+              {
+                "id": "p1",
+                "name": "朱军",
+                "identity": "教授",
+                "organization": "清华大学",
+                "intro": "公开检索资料记载：朱军 CAAI机器学习专委会副主任 清华大学计算机系教授。任职信息以资料日期为准，当前状态请查看原文。",
+                "evidence": {
+                  "identity": {
+                    "value": "教授",
+                    "quote": "朱军 CAAI机器学习专委会副主任 清华大学计算机系教授",
+                    "source_id": "S52",
+                    "url": "https://www.caai.cn/site/content/5467.html",
+                    "date": "2026/01/22 00:00:00",
+                    "basis": "search-excerpt"
+                  },
+                  "organization": {
+                    "value": "清华大学",
+                    "quote": "朱军 CAAI机器学习专委会副主任 清华大学计算机系教授",
+                    "source_id": "S52",
+                    "url": "https://www.caai.cn/site/content/5467.html",
+                    "date": "2026/01/22 00:00:00",
+                    "basis": "search-excerpt"
+                  }
+                },
+                "verification": "search-excerpt",
+                "common": [
+                  "背景交集（推断）：用户的数据分析与AI产品原型经历，与其公开研究的机器学习理论方向有交集"
+                ],
+                "collaborate": [
+                  "AI建议：可讨论概率机器学习或深度学习基础方法的学习路径"
+                ],
+                "connection": [
+                  "未检索到有充分证据的公开连接入口，不提供推测的联系方式。"
+                ],
+                "entryPoints": [],
+                "conclusion": "人物有公开资料支持，但本次未找到可靠的公开连接入口。",
+                "sources": [
+                  {
+                    "id": "S52",
+                    "title": "中国人工智能学会五位专家入选2025 ACM Fellow",
+                    "url": "https://www.caai.cn/site/content/5467.html",
+                    "site": "中国人工智能学会",
+                    "date": "2026/01/22 00:00:00",
+                    "excerpt": "中国人工智能学会五位专家入选2025 ACM Fellow 今日,美国计算机协会 ACM(Association for Computing Machinery)公布了最新一届会士名单。本年度新入选科学家共有 71 人,他们的贡献涵盖了医疗AI、计算机图形学、数据管理、人机交互等领域。其中,CAAI会士梅涛博士、熊辉教授,CAAI机器学习专委会副主任朱军教授,CAAI智能交互专委会副主任陈宝权教授,CAAI会员郑宇教授等19位华人学者入选。 梅涛 加拿大工程院外籍院士 智象未来创始人兼首席执行官 CAAI/IEEE/IAPR‌/ACM Fellow 获选原因:在多媒体分析、检索及应用方面的贡献。 个人简介:曾担任微软研究院资深研究员、京东集团副总裁,创立生成式AI企业智象未来,聚焦多模态大模型研发。在人工智能领域取得多项突破性成果,主要研究方向包括多媒体内容分析、图像理解与视频智能技术,论文被引用四万余次,荣获 15 项国际论文奖,拥有 70 余项授权专利。连续5年担任CVPR等顶级会议领域主席,担任《IEEE Transactions on Image Processing》等多本国际顶级期刊编委,主持参与制定5项国际标准,曾获ACM杰出会员称号(2016年)。 熊辉 香港科技大学(广州)协理副校长 人工智能学域讲座教授 国家级高层次人才 CAAI/AAAS/AAAI/IEEE/ACM Fellow 获选原因:在推动AI和移动计算发展方面的研究贡献。 个人简介:2025广东省劳动模范、ACM杰出科学家,Nature子刊《Nature npj|AI》创刊主编。主持科技部国家重点研发计划、国家自然科学基金委员会重大研究计划重点项目多项。发表论文400余篇,学术引用超5.8万次,h-index 99,荣登全球前2%顶尖科学家榜单年度科学影响力及终身科学影响力排行榜。获IEEE ICDM-2010 最佳研究论文奖、AAAI-2021最佳论文奖、哈佛商业评论拉姆查兰-管理实践最高奖等。 朱军 CAAI机器学习专委会副主任 清华大学计算机系教授 国家级领军人才 IEEE/AAAI/ACM Fellow 获选原因:在概率机器学习的理论和方法方面所做的贡献。 个人简介:智能技术与系统国家重点实验室副主任,清华—博世机器学习联合研究中心主任,北京智源人工智能研究院机器学习首席科学家。研究工作围绕机器学习基础理论、高效算法和应用展开,注重理论与实际问题结合。IEEE TPAMI副主编,担任ICML、NeurIPS等领域主席20余次。入选MIT TR35中国先锋者、IEEE“AI’s 10 to Watch”。曾获中国科协求是杰出青年奖、科学探索奖、CCF自然科学一等奖、吴文俊人工智能自然科学一等奖、ICLR杰出论文奖以及多项国际竞赛冠军等。 陈宝权 CAAI智能交互专委会副主任 北京大学教授、智能学院副院长 IEEE/CCF/CSIG/ACM Fellow 获选原因:在大规模场景重建、离散几何处理和制造形状设计方面的贡献。 个人简介:研究领域为计算机图形学、三维视觉..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "label": "机器学习研究者",
+            "people": [
+              {
+                "id": "p2",
+                "name": "杨朋昆",
+                "identity": "副教授",
+                "organization": "清华大学",
+                "intro": "公开检索资料记载：清华大学统计与数据科学系杨朋昆副教授。任职信息以资料日期为准，当前状态请查看原文。",
+                "evidence": {
+                  "identity": {
+                    "value": "副教授",
+                    "quote": "清华大学统计与数据科学系杨朋昆副教授",
+                    "source_id": "S63",
+                    "url": "https://www.stat.tsinghua.edu.cn/info/1059/4244.htm",
+                    "date": "2026/08/03 00:00:00",
+                    "basis": "search-excerpt"
+                  },
+                  "organization": {
+                    "value": "清华大学",
+                    "quote": "清华大学统计与数据科学系杨朋昆副教授",
+                    "source_id": "S63",
+                    "url": "https://www.stat.tsinghua.edu.cn/info/1059/4244.htm",
+                    "date": "2026/08/03 00:00:00",
+                    "basis": "search-excerpt"
+                  }
+                },
+                "verification": "search-excerpt",
+                "common": [
+                  "背景交集（推断）：用户应用统计学与Python数据分析背景，与其公开研究的高维统计、机器学习方向有交集"
+                ],
+                "collaborate": [
+                  "AI建议：可讨论高维统计或统计学习算法相关问题"
+                ],
+                "connection": [
+                  "未检索到有充分证据的公开连接入口，不提供推测的联系方式。"
+                ],
+                "entryPoints": [],
+                "conclusion": "人物有公开资料支持，但本次未找到可靠的公开连接入口。",
+                "sources": [
+                  {
+                    "id": "S63",
+                    "title": "杨朋昆副教授获华为火花奖",
+                    "url": "https://www.stat.tsinghua.edu.cn/info/1059/4244.htm",
+                    "site": "清华大学主页",
+                    "date": "2026/08/03 00:00:00",
+                    "excerpt": "近日,华为技术有限公司发布难题揭榜第144期“火花奖”获得者名单, 清华大学统计与数据科学系杨朋昆副教授 在珠峰会战难题“网络时空序列基础模型技术”中提出的一套具备 In-Context Learning 范式的网络时空序列基模框架具有较高价值,被授予华为公司“火花奖”。 杨朋昆副教授带领团队成员 何松泰 (导师:杨朋昆,统计系2026级博士研究生,研究方向:统计机器学习)、 张裔炯 (博士后研究员,合作导师:李东,研究方向:时间序列)联合开展科研攻关,针对网络运维领域海量KPI时空序列异质性强、统一表征困难以及多任务建模成本高等关键技术难题,提出了面向时空序列的 结构感知零样本上下文推断范式 。该方案通过统计、周期和状态特征构建可学习、可解释、可迁移的时空表征,并结合先验数据拟合模型,实现了单KPI预测、异常检测及多KPI根因定位等任务的统一推理,为智能网络运维提供了具有创新价值的通用技术方案。 杨朋昆副教授简介 杨朋昆,清华大学统计与数据科学系“敏行学者”副教授,长期致力于高维统计、统计学习理论与算法研究,围绕复杂异质数据的统计建模、最优统计推断与潜在结构学习等问题取得了一系列创新成果。 关于华为“火花奖” 火花奖,取自火花碰撞之意。华为公司重视基础研究,坚持开放创新,自2021年11月起,将产业会战和行业面临的老大难问题总结提炼为兼具商业价值和科学价值的科学问题向社会发布,采用难题揭榜的形式,寻找基础理论扎实、有创新解题思路的人才。为表彰、感谢揭榜人才对于产业界及科学界作出的重大贡献,华为公司特设立“火花奖”。..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "label": "数据科学研究者",
+            "people": []
+          },
+          {
+            "id": "r4",
+            "label": "学术讲座入口",
+            "people": []
+          },
+          {
+            "id": "r5",
+            "label": "实习招募",
+            "people": []
+          }
+        ],
+        "sourceCount": 66,
+        "notice": ""
+      }
+    }
+  ]
+}

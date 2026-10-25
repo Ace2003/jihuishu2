@@ -1,0 +1,14 @@
+{
+  "name": "jihuishu-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "机会树 · 公开人物机会探索 MVP",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/server.test.mjs"
+  }
+}

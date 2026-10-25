@@ -1,0 +1,8 @@
+{
+  "initialEmpty": true,
+  "staticExample": true,
+  "mobile": true,
+  "export": true,
+  "realBrowser": true,
+  "errors": []
+}

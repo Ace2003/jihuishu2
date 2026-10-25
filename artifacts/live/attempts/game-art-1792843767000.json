@@ -1,0 +1,194 @@
+{
+  "input": {
+    "id": "game-art",
+    "about": "我在上海做独立游戏美术，会 Blender、角色建模和 Unity，正在制作国风游戏原型。",
+    "goal": "想认识上海独立游戏制作人和游戏美术负责人，寻找公开活动交流与作品合作机会。"
+  },
+  "base": "http://127.0.0.1:3000",
+  "httpStatus": 200,
+  "elapsedMs": 22156,
+  "status": "LIVE_DEGRADED",
+  "integrity": true,
+  "events": [
+    {
+      "type": "progress",
+      "stage": "planning",
+      "details": "正在理解你的目标与规划职业角色…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "已规划 6 类人物，开始调用元宝搜索…"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 1/6：独立游戏制作人，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 2/6：游戏美术负责人，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 3/6：国风游戏团队，获得 9 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 4/6：游戏行业活动，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 5/6：独立游戏社区，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "searching",
+      "details": "元宝搜索 6/6：游戏美术外包合作，获得 10 条来源"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "已收集 58 个去重来源，正在提取具名候选…"
+    },
+    {
+      "type": "progress",
+      "stage": "verifying",
+      "details": "正在逐字段核对职位、机构与公开入口；证据不足的人物将被省略…"
+    },
+    {
+      "type": "result",
+      "data": {
+        "mode": "live",
+        "summary": "上海独立游戏美术，擅长Blender角色建模与Unity，制作国风游戏原型，希望结识本地独立游戏制作人和美术负责人，寻找公开活动与作品合作机会。",
+        "keywords": [
+          "独立游戏制作人",
+          "游戏美术负责人",
+          "国风游戏团队"
+        ],
+        "goal": "想认识上海独立游戏制作人和游戏美术负责人，寻找公开活动交流与作品合作机会。",
+        "queries": [
+          {
+            "stage": "discovery",
+            "role": "独立游戏制作人",
+            "query": "上海 独立游戏 制作人 工作室 公开活动 交流 合作",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "游戏美术负责人",
+            "query": "上海 游戏公司 美术负责人 美术总监 公开 分享 活动",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "国风游戏团队",
+            "query": "国风 游戏 开发团队 上海 招募 合作 公开 主页",
+            "count": 9
+          },
+          {
+            "stage": "discovery",
+            "role": "游戏行业活动",
+            "query": "上海 游戏 开发者 沙龙 Game Jam 公开 活动 报名",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "独立游戏社区",
+            "query": "上海 独立游戏 社区 开发者 交流 活动 入口",
+            "count": 10
+          },
+          {
+            "stage": "discovery",
+            "role": "游戏美术外包合作",
+            "query": "游戏 美术 外包 合作 上海 公开 招募 作品",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "游戏美术负责人",
+            "query": "林蕤 游戏美术负责人 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "独立游戏制作人",
+            "query": "杨滨 独立游戏制作人 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "国风游戏团队",
+            "query": "茄子 国风游戏团队 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "游戏行业活动",
+            "query": "Simon 游戏行业活动 机构 职位 个人简介 公开活动",
+            "count": 9
+          },
+          {
+            "stage": "verification",
+            "role": "游戏美术负责人",
+            "query": "魏铭 游戏美术负责人 机构 职位 个人简介 公开活动",
+            "count": 10
+          },
+          {
+            "stage": "verification",
+            "role": "独立游戏制作人",
+            "query": "万兽MK 独立游戏制作人 机构 职位 个人简介 公开活动",
+            "count": 10
+          }
+        ],
+        "warnings": [],
+        "usage": {
+          "modelCalls": 3,
+          "searchCalls": 12,
+          "promptTokens": 52171,
+          "completionTokens": 2896
+        },
+        "searchedAt": "2026-10-24T12:07:18.643Z",
+        "verificationBasis": "SearchPro 返回的标题和摘要逐字段核对；未抓取来源全文，不保证当前任职或入口仍有效。",
+        "groups": [
+          {
+            "id": "r1",
+            "label": "独立游戏制作人",
+            "people": []
+          },
+          {
+            "id": "r2",
+            "label": "游戏美术负责人",
+            "people": []
+          },
+          {
+            "id": "r3",
+            "label": "国风游戏团队",
+            "people": []
+          },
+          {
+            "id": "r4",
+            "label": "游戏行业活动",
+            "people": []
+          },
+          {
+            "id": "r5",
+            "label": "独立游戏社区",
+            "people": []
+          },
+          {
+            "id": "r6",
+            "label": "游戏美术外包合作",
+            "people": []
+          }
+        ],
+        "sourceCount": 80,
+        "notice": "已搜索公开资料，但没有人物同时满足姓名、职位与机构的原文证据要求；未补造人物。"
+      }
+    }
+  ]
+}

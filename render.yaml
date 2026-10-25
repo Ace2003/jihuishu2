@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: jihuishu
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: HOST
+        value: 0.0.0.0
+      - key: LLM_CHAT_URL
+        value: https://api.deepseek.com/chat/completions
+      - key: LLM_MODEL
+        value: deepseek-chat
+      - key: MAX_CONCURRENT
+        value: "2"
+      - key: DAILY_INVESTIGATION_LIMIT
+        value: "30"
+      # 以下两个密钥不写入仓库，Render 首次部署时会提示填写。
+      - key: YUANBAO_API_KEY
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
