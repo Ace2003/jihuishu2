@@ -37,7 +37,7 @@ git ls-files | grep -i env
    - `LLM_API_KEY`：DeepSeek（或其它兼容 Chat Completions 服务）的 Key
    两个值从本地 `.env.local` 复制，**不要**发到聊天或提交到仓库。
 5. 点击 **Apply**，等待状态变为 **Live**。
-6. 打开 Render 分配的地址（形如 `https://jihuishu.onrender.com`），访问 `/api/status` 应返回：
+6. 打开 Render 分配的地址（形如 `https://jihuishu2.onrender.com`），访问 `/api/status` 应返回：
 
 ```json
 {"searchConfigured":true,"modelConfigured":true,"mode":"real-api"}
